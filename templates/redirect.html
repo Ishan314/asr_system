@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirect Page</title>
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <script>
+    setTimeout(function() {
+      window.location.href = '/summarize_res'; // Replace with the URL of the destination page
+    }, 5000); // Replace 5000 with the time interval in milliseconds (e.g., 5000 = 5 seconds)
+  </script>
+  <style>
+    /* Center the loading animation */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Define the loading animation */
+    @keyframes loading {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loader {
+      border: 16px solid #f3f3f3; /* Light gray */
+      border-top: 16px solid #3498db; /* Blue */
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: loading 2s linear infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader"></div>
+
+</body>
+</html>
