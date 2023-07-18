@@ -5,7 +5,7 @@ from flask import Flask, render_template, request
 ssl._create_default_https_context = ssl._create_unverified_context
 
 app = Flask(__name__, template_folder="templates", static_folder="static")
-openai.api_key = "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"
+openai.api_key = # key goes here
 
 @app.route("/", methods=['GET', 'POST'])
 def submit():
